@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import SidebarLayout from '@/Layouts/SidebarLayout.vue';
+import Sidebar from '@/Components/Sidebar.vue';
 import { Head } from '@inertiajs/vue3';
 </script>
 <template>
     <Head title="Dashboard" />
-    <SidebarLayout>
-        <div class="grid lg:grid-cols-4 gap-4 m-4 relative md:grid-cols-2">
+    <Sidebar>
+        <div class="grid lg:grid-cols-4 gap-4 relative md:grid-cols-2">
             <div id="card"
                 class="flex flex-row items-center justify-between bg-white p-4 border shadow-md shadow-slate-200 rounded-lg">
                 <div>
@@ -68,12 +68,12 @@ import { Head } from '@inertiajs/vue3';
             </div>
         </div>
         <!-- <div id="card" class="bg-white m-4 p-4 border shadow-lg shadow-slate-200 rounded-lg">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing
-                elit. Ipsam labore nam, harum repellat delectus voluptas
-                ipsa quos ullam culpa nesciunt possimus minima sapiente
-                in eaque atque nihil quae officia voluptatum.
-            </p>
-        </div> -->
-    </SidebarLayout>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing
+                    elit. Ipsam labore nam, harum repellat delectus voluptas
+                    ipsa quos ullam culpa nesciunt possimus minima sapiente
+                    in eaque atque nihil quae officia voluptatum.
+                </p>
+            </div> -->
+    </Sidebar>
 </template>
