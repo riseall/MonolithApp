@@ -11,7 +11,7 @@ class UpdatePegawaiRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,9 @@ class UpdatePegawaiRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+        'nama' => 'sometimes|string|max:255',
+        'nip' => 'sometimes|string',
+        'alamat' => 'sometimes|string|nullable'
         ];
     }
 }

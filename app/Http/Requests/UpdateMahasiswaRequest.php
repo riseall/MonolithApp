@@ -11,7 +11,7 @@ class UpdateMahasiswaRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,13 @@ class UpdateMahasiswaRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'foto' => 'sometimes|file',
+            'nama' => 'sometimes|string|max:255',
+            'nim' => 'sometimes|numeric',
+            'kelas' => 'sometimes|string',
+            'telepon' => 'sometimes|string',
+            'email' => 'sometimes|email',
+            'alamat' => 'sometimes|string',
         ];
     }
 }

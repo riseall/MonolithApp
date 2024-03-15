@@ -1,0 +1,35 @@
+### Get all mahasiswa
+GET http://localhost/api/mahasiswa
+Accept: application/json
+
+### Get mahasiswa
+GET http://localhost/api/mahasiswa/1
+Accept: application/json
+
+### Create mahasiswa
+POST http://localhost/api/mahasiswa
+Accept: application/json
+Content-Type: application/json
+
+{   
+    "foto": "kln",
+    "nama": "Luffyac",
+    "nim": 498213,
+    "kelas": "kadcd",
+    "telepon": "083728631",
+    "email": "luffy3@gmail.com",
+    "alamat": "Lmcd"
+}
+
+### Update mahasiswa
+PUT  http://localhost/api/mahasiswa/2
+Accept: application/json
+Content-Type: application/json
+
+{
+    "email": "nugroho@mail.com"
+}
+
+### Delete mahasiswa
+DELETE http://localhost/api/mahasiswa/3
+Accept: application/json

@@ -1,3 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;700;800&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.th-items {
+    @apply p-2 text-[13px] font-medium
+}
+
+.td-items {
+    @apply p-3 text-gray-600 text-sm font-normal ml-2 truncate
+}
+
+.input-form {
+    @apply px-3 py-3 block border-gray-300 placeholder-gray-300 text-gray-600 bg-white rounded text-sm focus:outline-none focus:ring w-full ease-linear transition-all duration-150
+}
+
+.card{
+    @apply flex flex-col shadow-md shadow-slate-200 rounded-lg overflow-hidden
+}
+
+.nav-item {
+    @apply flex text-sm items-center justify-start space-x-2 py-3 px-7 hover:bg-gray-950 rounded-md hover:text-gray-400 active:bg-gray-800 focus:ring-1 focus:ring-gray-300 transition duration-200
+}
+
+.drop-item {
+    @apply w-full text-left text-gray-700 block px-3 py-1 text-sm hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:bg-gray-100 dark:focus:bg-gray-800 transition duration-150 ease-in-out
+}
+
+.navbottom {
+    @apply flex flex-col w-full items-center p-4 transition rounded-lg duration-200 active:bg-gray-200
+}

@@ -12,11 +12,11 @@ return new class extends Migration {
     {
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->id();
-            $table->string('foto');
+            $table->foreignId('user_id')->nullable()->constrained('users')->cascadeOnUpdate()->nullOnDelete();
+            $table->string('foto')->nullable();
             $table->string('nama');
             $table->integer('nim');
             $table->string('kelas');
-            $table->string('jenis_kelamin');
             $table->string('telepon');
             $table->string('email');
             $table->text('alamat');

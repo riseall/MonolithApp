@@ -21,7 +21,6 @@ class MahasiswaFactory extends Factory
             'nama' => $this->faker->name(),
             'nim' => $this->faker->randomNumber(8, true),
             'kelas' => $this->faker->word(),
-            'jenis_kelamin' => $this->faker->word(),
             'telepon' => $this->faker->PhoneNumber(),
             'email' => $this->faker->unique()->safeEmail(),
             'alamat' => $this->faker->address()

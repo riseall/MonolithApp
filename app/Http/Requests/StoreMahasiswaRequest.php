@@ -11,7 +11,7 @@ class StoreMahasiswaRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -22,7 +22,13 @@ class StoreMahasiswaRequest extends FormRequest
     public function rules(): array
     {
         return [
-            //
+            'foto' => 'file|nullable|mimes:jpg,png,pdf|max:2048',
+            'nama' => 'required|string|max:255',
+            'nim' => 'required',
+            'kelas' => 'required',
+            'telepon' => 'required',
+            'email' => 'required|email',
+            'alamat' => 'required',
         ];
     }
 }

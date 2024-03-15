@@ -15,7 +15,13 @@ export default defineConfig({
                     base: null,
                     includeAbsolute: false,
                 },
+                compilerOptions: {
+                    isCustomElement: (tag) => ['DialogTitle'].includes(tag),
+                  }
             },
         }),
     ],
+    server: {
+        host: '127.0.0.1',
+    },
 });
